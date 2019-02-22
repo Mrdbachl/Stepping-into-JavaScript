@@ -1,22 +1,11 @@
+var links = document.getElementByTagName("a");
+
 var i = i + 0;
 
-for (i = 1; i < 10; i++){
+for (i = 0; i < links.length; i++){
 	
-	if(i === 5 || i === 3){
-		
-		continue;
+	links[i].className = "link-" + i;
 		
 	}
 	
-	console.log(i);
 	
-	if(i === 7){
-		
-		break;
-		
-	}
-
-	
-} 
-	
-console.log("I have broken out of the loop");
